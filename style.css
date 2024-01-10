@@ -123,8 +123,9 @@ footer .attribution {
     font-size: .7rem;
 }
 
-@media screen and (max-width:425px) {
-    main .main_container {
+@media only screen and (max-width:425px) {
+
+    .main_container {
         width: 90%;
         flex-direction: column;
     }
@@ -133,8 +134,14 @@ footer .attribution {
         width: 90%;
     }
 
+    main .main_container .image img {
+        width: 100%;
+    }
+
     main .main_container .text-content {
         width: 100%;
+        text-align: center;
+        padding: 2rem;
     }
 
     main .main_container .text-content h2 {
@@ -153,11 +160,13 @@ footer .attribution {
     main .main_container .text-content button {
         margin: auto;
         width: 60%;
+
     }
 
     main .main_container .icons {
         position: unset;
         margin: auto;
+        margin-bottom: 1rem;
     }
 
     footer {
