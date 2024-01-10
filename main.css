@@ -123,7 +123,24 @@ footer .attribution {
     font-size: .7rem;
 }
 
+/* testing media query */
 @media screen and (max-width:425px) {
+    body {
+
+        background-color: red;
+    }
+
+    main .main_container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    main .main_container .image {
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width:425px) {
     main .main_container {
         width: 90%;
         flex-direction: column;
@@ -165,4 +182,4 @@ footer .attribution {
         display: block;
         margin: auto;
     }
-}
+} */
